@@ -82,6 +82,8 @@ public class Movement : MonoBehaviour {
 
     private void Start() {
         _isGrounding = true;
+        _currentMoveSpeed = _moveSpeed;
+        _currentJumpForce = _jumpForce;
     }
 
     private void Update() {
