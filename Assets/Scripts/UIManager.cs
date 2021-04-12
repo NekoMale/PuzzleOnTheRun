@@ -14,14 +14,18 @@ public class UIManager : MonoBehaviour
     {
         slots = GetComponentsInChildren<Slot>();
     }
-    #region UnityEvent
+    #region UnityEvent CB
     private void OnEnable()
     {
         GameManager.OnSelectionEvent += OnSelection;
+        GameManager.OnPlacementEvent += OnPlacement;
+        GameManager.OnResetEvent += OnReset;
     }
     void OnDisable()
     {
         GameManager.OnSelectionEvent -= OnSelection;
+        GameManager.OnPlacementEvent -= OnPlacement;
+        GameManager.OnResetEvent -= OnReset;
     }
     #endregion
 
@@ -38,29 +42,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void OnPlacement(int index)
+    bool OnPlacement(int index)
     {
-        slots[index].OnItemPlaced();
+        if (index < slots.Length)
+            return slots[index].OnItemPlaced();
+        else return false;
     }
 
-
-    // Update is called once per frame
-    void Update()
+    void OnReset(int index)
     {
-        //foreach (KeyCode key in SlotKey.Keys)
-        //{
-        //    if (Input.GetKeyDown(key)){
-        //        if(lastSelectedSlot != SlotKey[key])
-        //        {
-        //            OnDeSelectionEvent.Invoke(slots[lastSelectedSlot]);
-        //        }
-        //        lastSelectedSlot = SlotKey[key];
-        //        Debug.Log(lastSelectedSlot);
-        //        canBePlaced = OnSelectionCheck.Invoke(slots[lastSelectedSlot]);
-        //    }
-        //}
-
-
+        slots[index].OnDeselection();
     }
 
 

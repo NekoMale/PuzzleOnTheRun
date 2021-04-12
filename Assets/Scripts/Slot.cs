@@ -44,7 +44,7 @@ public class Slot : MonoBehaviour
                 itemImage.rectTransform.anchoredPosition += new Vector2(0, 3);
                 selected = true;
             }
-            Cursor.SetCursor(itemImage.sprite.texture, Vector2.zero, CursorMode.ForceSoftware);
+            Cursor.SetCursor(itemImage.sprite.texture, new Vector2(.5f,.5f), CursorMode.ForceSoftware);
         }
     }
 
@@ -53,22 +53,20 @@ public class Slot : MonoBehaviour
         return ItemValue > 0;
     }
 
-    public void OnItemPlaced()
+    public bool OnItemPlaced()
     {
         if (CheckAvailability())
         {
             ItemValue--;
-            itemImage.rectTransform.anchoredPosition -= new Vector2(0, 3);
         }
+        return CheckAvailability();
 
     }
 
     public void OnDeselection()
     {
-
-        selected = false;
-        itemImage.rectTransform.anchoredPosition -= new Vector2(0, 3);
-
+            selected = false;
+            itemImage.rectTransform.anchoredPosition = new Vector2(0, 0);
     }
 }
 
