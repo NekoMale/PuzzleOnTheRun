@@ -8,9 +8,15 @@ public class GameManager : MonoBehaviour
 {
 
     #region Events
-    public static event Action<int> OnSelectionEvent,OnResetEvent;
+    public static event Action<int> OnSelectionEvent, OnResetEvent;
     public static event Func<int, bool> OnPlacementEvent;
+    public static event Action<int> OnPointIncrease;
+    public static event Action<int> OnPointDecrease;
+    public static event Action<int> OnLivesIncrease;
     #endregion
+
+    int _lives = 0;
+    int _score = 0;
 
     public static GameManager GetInstance;
 
@@ -24,10 +30,45 @@ public class GameManager : MonoBehaviour
 
 
 
+
+    List<GameObject> objToReset = new List<GameObject>();
     Dictionary<KeyCode, int> slotsKeyValue = new Dictionary<KeyCode, int>();
     KeyCode key;
 
+    public int Lives
+    {
+        get
+        {
+            return _lives;
 
+        }
+        set
+        {
+            _lives = value;
+            OnLivesIncrease.Invoke(_lives);
+        }
+    }
+    public int Score
+    {
+        get
+        {
+            return _score;
+
+        }
+        set
+        {
+            _score = value;
+            OnPointIncrease.Invoke(_score);
+        }
+    }
+
+    void RestartLevel()
+    {
+        for (int i = 0; i < objToReset.Count; i++)
+        {
+            Destroy(objToReset[i]);
+        }
+    }
     void OnEnable()
     {
         //qualora ci servissero cose del gamemanager
@@ -66,8 +107,8 @@ public class GameManager : MonoBehaviour
                 spawnEffect.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
                 //SPAWNA OGGETTO
                 //test  
-                GameObject item = Instantiate(test);
-                item.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+               //
+                //objToReset.Add()
             }
             else
             {
