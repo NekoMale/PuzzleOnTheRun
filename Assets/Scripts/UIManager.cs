@@ -51,7 +51,8 @@ public class UIManager : MonoBehaviour
 
     void OnReset(int index)
     {
-        slots[index].OnDeselection();
+        if (index < slots.Length)
+            slots[index].OnDeselection();
     }
 
 

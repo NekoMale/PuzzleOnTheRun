@@ -44,7 +44,7 @@ public class Slot : MonoBehaviour
                 itemImage.rectTransform.anchoredPosition += new Vector2(0, 3);
                 selected = true;
             }
-            Cursor.SetCursor(itemImage.sprite.texture, new Vector2(.5f,.5f), CursorMode.ForceSoftware);
+            Cursor.SetCursor(itemImage.sprite.texture,Vector2.one, CursorMode.ForceSoftware);
         }
     }
 
@@ -58,8 +58,9 @@ public class Slot : MonoBehaviour
         if (CheckAvailability())
         {
             ItemValue--;
+            return true;
         }
-        return CheckAvailability();
+        return false;
 
     }
 

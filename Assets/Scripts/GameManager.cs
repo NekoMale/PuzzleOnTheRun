@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     [Header("GUI")]
     [SerializeField] Sprite defaultCursor;
+    [SerializeField] GameObject ps;
+    [SerializeField] GameObject test;
 
 
 
@@ -56,13 +58,21 @@ public class GameManager : MonoBehaviour
         {
             //If object to spawn is available
             if (OnPlacementEvent.Invoke(slotsKeyValue[key]))
-            {       
+            {
+                ps.gameObject.SetActive(true);
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = Camera.main.nearClipPlane;
+                GameObject spawnEffect = Instantiate(ps);
+                spawnEffect.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
                 //SPAWNA OGGETTO
+                //test  
+                GameObject item = Instantiate(test);
+                item.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
             }
             else
             {
-                OnResetEvent.Invoke(slotsKeyValue[key]);
-                Cursor.SetCursor(defaultCursor.texture, Vector2.zero, CursorMode.ForceSoftware);
+                OnResetEvent?.Invoke(slotsKeyValue[key]);
+                Cursor.SetCursor(/*defaultCursor.texture*/null, Vector2.zero, CursorMode.ForceSoftware);
             }
         }
     }
