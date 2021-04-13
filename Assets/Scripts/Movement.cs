@@ -73,6 +73,10 @@ public class Movement : MonoBehaviour {
     public void Jump() {
         _isJumping = true;
     }
+    public void ResetJump()
+    {
+        _currentJumpForce = _jumpForce;
+    }
     #endregion
 
     #region Unity Methods
@@ -106,6 +110,7 @@ public class Movement : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         _isGrounding = true;
+        ResetJump();
     }
     #endregion
 }
