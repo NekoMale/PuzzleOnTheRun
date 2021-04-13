@@ -10,8 +10,7 @@ public class VerticalSaw : MonoBehaviour
     private Animator anim;
     Transform childToRemove;
 
-    [Header("Enter here the name of the game scene where this trap is located")]
-    public string GameSceneName;
+    string GameSceneName;
     [Header("Blade move limits")]
     public Transform UpSawLimit;
     public Transform DownSawLimit;
@@ -23,6 +22,7 @@ public class VerticalSaw : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameSceneName = SceneManager.GetActiveScene().name;
         sawRigidbody = GetComponent<Rigidbody2D>();
         sawSpriteRenderer = GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
@@ -62,7 +62,7 @@ public class VerticalSaw : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(GameSceneName);
         }

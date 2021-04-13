@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SpikeBall : MonoBehaviour
 {
-    [Header("Enter here the name of the game scene where this trap is located")]
-    public string GameSceneName;
+    string GameSceneName;
     [Header("Enter here the RigidBody of anchor point")]
     public Rigidbody2D AnchorRigidBody;
     [Header("Pendulum movement controller")]
@@ -24,6 +23,7 @@ public class SpikeBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameSceneName = SceneManager.GetActiveScene().name;
         //AnchorRigidBody = GetComponent<Rigidbody2D>();
         movingClockwise = true;
         if (InstantiateChain)
@@ -84,7 +84,7 @@ public class SpikeBall : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(GameSceneName);
         }

@@ -6,18 +6,17 @@ using System;
 
 public class Spikes : MonoBehaviour
 {
-    
-    
+    string GameSceneName;
 
-    [Header("Enter here the name of the game scene where this trap is located")]
-    public string GameSceneName;
+    private void Start()
+    {
+        GameSceneName = SceneManager.GetActiveScene().name;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            
             SceneManager.LoadScene(GameSceneName);
-            
         }
     }
 

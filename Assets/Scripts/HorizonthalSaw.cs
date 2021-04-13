@@ -10,8 +10,8 @@ public class HorizonthalSaw : MonoBehaviour
     private Animator anim;
     Transform childToRemove;
 
-    [Header("Enter here the name of the game scene where this trap is located")]
-    public string GameSceneName;
+    public GameObject SawChainPrefab;
+    string GameSceneName;
     [Header("Blade move limits")]
     public Transform SxSawLimit;
     public Transform DxSawLimit;
@@ -19,21 +19,17 @@ public class HorizonthalSaw : MonoBehaviour
     public float SawSpeed;
     public float SawSpeedRotation = 1;
     public bool FlipBladeOnDirectionChange = true;
-
+    public int SawChainNumber;
     // Start is called before the first frame update
     void Start()
     {
+        GameSceneName = SceneManager.GetActiveScene().name;
         sawRigidbody = GetComponent<Rigidbody2D>();
         sawSpriteRenderer = GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
         sawRigidbody.velocity = new Vector2(SawSpeed, 0);
-
-        //Remove all children in Saw to keep them from moving with saw
-        for (int i = this.transform.childCount -1; i >= 0; i--)
-        {
-            childToRemove = this.transform.GetChild(i);
-            childToRemove.transform.parent = null;
-        }
+        //HorizonthalSawChainInstantiator();
+        
     }
 
     // Update is called once per frame
@@ -62,9 +58,27 @@ public class HorizonthalSaw : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(GameSceneName);
         }
     }
+
+    //Da Rivedere
+    /*
+    void HorizonthalSawChainInstantiator()
+    {
+        float distance = Vector2.Distance(SxSawLimit.position, DxSawLimit.position);
+        float distanceForSpawnChain = distance / SawChainNumber;
+        Vector2 SpawnPos = new Vector2(0, 0);
+        for (int i = 0; i < SawChainNumber; i++)
+        {
+            SpawnPos.x += distanceForSpawnChain;
+            GameObject ring = Instantiate(SawChainPrefab);
+            ring.transform.parent = SxSawLimit.transform;
+            ring.transform.localPosition = new Vector2(SpawnPos.x, 0);
+
+        }
+    }
+    */
 }
