@@ -28,12 +28,6 @@ public class VerticalSaw : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         sawRigidbody.velocity = new Vector2(0, SawSpeed);
 
-        //Remove all children in Saw to keep them from moving with saw
-        for (int i = this.transform.childCount - 1; i >= 0; i--)
-        {
-            childToRemove = this.transform.GetChild(i);
-            childToRemove.transform.parent = null;
-        }
     }
 
     // Update is called once per frame
