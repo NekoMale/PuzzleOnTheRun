@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemValueTxt: {fileID: 6633961203039927198}
   itemImage: {fileID: 8302541339862846278}
+  objContained: {fileID: 4471701489585478225, guid: 01163b19bb75af64f9715048f9ea02fe, type: 3}
 --- !u!1 &1656958498700719217
 GameObject:
   m_ObjectHideFlags: 0

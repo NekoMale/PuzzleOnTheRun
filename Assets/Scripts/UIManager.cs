@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
         GameManager.OnResetEvent += OnReset;
         GameManager.OnPointIncrease += IncreasePoints;
         GameManager.OnLivesIncrease += IncreaseLives;
+        GameManager.OnSpawningEvent += GetItem2Spawn;
     }
     void OnDisable()
     {
@@ -44,6 +45,8 @@ public class UIManager : MonoBehaviour
         GameManager.OnResetEvent -= OnReset;
         GameManager.OnPointIncrease -= IncreasePoints;
         GameManager.OnLivesIncrease -= IncreaseLives;
+        GameManager.OnSpawningEvent -= GetItem2Spawn;
+
     }
     #endregion
 
@@ -65,6 +68,11 @@ public class UIManager : MonoBehaviour
         if (index < slots.Length)
             return slots[index].OnItemPlaced();
         else return false;
+    }
+
+    GameObject GetItem2Spawn(int index)
+    {
+        return slots[index].GetObjToSpawn();
     }
 
     void OnReset(int index)

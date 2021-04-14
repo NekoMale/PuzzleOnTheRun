@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static event Action<int> OnPointIncrease;
     public static event Action<int> OnPointDecrease;
     public static event Action<int> OnLivesIncrease;
+    public static event Func<int, GameObject> OnSpawningEvent;
     #endregion
 
     int _lives = 0;
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    List<GameObject> objToReset = new List<GameObject>();
+
     Dictionary<KeyCode, int> slotsKeyValue = new Dictionary<KeyCode, int>();
     KeyCode key;
 
@@ -62,13 +63,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void RestartLevel()
-    {
-        for (int i = 0; i < objToReset.Count; i++)
-        {
-            Destroy(objToReset[i]);
-        }
-    }
+
+
     void OnEnable()
     {
         //qualora ci servissero cose del gamemanager
@@ -84,6 +80,15 @@ public class GameManager : MonoBehaviour
         }
     }
     // Update is called once per frame
+
+    void InstantiateObj(GameObject obj)
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        GameObject go =Instantiate(obj);
+        go.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
     void Update()
     {
         foreach (KeyCode keyPressed in slotsKeyValue.Keys)
@@ -100,15 +105,14 @@ public class GameManager : MonoBehaviour
             //If object to spawn is available
             if (OnPlacementEvent.Invoke(slotsKeyValue[key]))
             {
-                ps.gameObject.SetActive(true);
-                Vector3 mousePos = Input.mousePosition;
-                mousePos.z = Camera.main.nearClipPlane;
-                GameObject spawnEffect = Instantiate(ps);
-                spawnEffect.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+
+
+                InstantiateObj(ps);
                 //SPAWNA OGGETTO
-                //test  
-               //
-                //objToReset.Add()
+                GameObject spawn = OnSpawningEvent.Invoke(slotsKeyValue[key]);
+                InstantiateObj(spawn);
+
+
             }
             else
             {

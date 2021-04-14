@@ -9,6 +9,7 @@ public class Slot : MonoBehaviour
 {
     public TextMeshProUGUI itemValueTxt;
     [SerializeField] Image itemImage;
+    public GameObject objContained;
 
     int _itemValue = 3;
     bool selected = false;
@@ -44,7 +45,7 @@ public class Slot : MonoBehaviour
                 itemImage.rectTransform.anchoredPosition += new Vector2(0, 3);
                 selected = true;
             }
-            Cursor.SetCursor(itemImage.sprite.texture,Vector2.one, CursorMode.ForceSoftware);
+            Cursor.SetCursor(itemImage.sprite.texture,new Vector2(itemImage.sprite.texture.width*0.5f,itemImage.sprite.texture.height*0.5f), CursorMode.ForceSoftware);
         }
     }
 
@@ -64,6 +65,10 @@ public class Slot : MonoBehaviour
 
     }
 
+    public GameObject GetObjToSpawn()
+    {
+        return objContained;
+    }
     public void OnDeselection()
     {
             selected = false;
