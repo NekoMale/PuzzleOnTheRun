@@ -101,7 +101,6 @@ public class Movement : MonoBehaviour {
         if(_isJumping) {
             _isGrounding = false;
             _isJumping = false;
-            Debug.Log($"{_currentMoveSpeed}, {_currentJumpForce}");
             _myRigidBody.AddForce(new Vector2(_currentMoveSpeed, _currentJumpForce), ForceMode2D.Impulse);
         }
         else if(_isGrounding) {

@@ -9,9 +9,9 @@ public class UIManager : MonoBehaviour
 
     Slot[] slots;
     int lastSelectedSlot = -1;
-    [Header("SCORE & LIVES")]
-    [SerializeField] TextMeshProUGUI scoreText;
-    [SerializeField] TextMeshProUGUI livesText;
+    //[Header("SCORE & LIVES")]
+    //[SerializeField] TextMeshProUGUI scoreText;
+    //[SerializeField] TextMeshProUGUI livesText;
     [SerializeField] List<int> slotsValue;
     // Start is called before the first frame update
     void Start()
@@ -34,8 +34,8 @@ public class UIManager : MonoBehaviour
         GameManager.OnSelectionEvent += OnSelection;
         GameManager.OnPlacementEvent += OnPlacement;
         GameManager.OnResetEvent += OnReset;
-        GameManager.OnPointIncrease += IncreasePoints;
-        GameManager.OnLivesIncrease += IncreaseLives;
+        //GameManager.OnPointIncrease += IncreasePoints;
+        //GameManager.OnLivesIncrease += IncreaseLives;
         GameManager.OnSpawningEvent += GetItem2Spawn;
     }
     void OnDisable()
@@ -43,8 +43,8 @@ public class UIManager : MonoBehaviour
         GameManager.OnSelectionEvent -= OnSelection;
         GameManager.OnPlacementEvent -= OnPlacement;
         GameManager.OnResetEvent -= OnReset;
-        GameManager.OnPointIncrease -= IncreasePoints;
-        GameManager.OnLivesIncrease -= IncreaseLives;
+        //GameManager.OnPointIncrease -= IncreasePoints;
+        //GameManager.OnLivesIncrease -= IncreaseLives;
         GameManager.OnSpawningEvent -= GetItem2Spawn;
 
     }
@@ -81,17 +81,14 @@ public class UIManager : MonoBehaviour
             slots[index].OnDeselection();
     }
 
-    void IncreasePoints(int value)
-    {
-        scoreText.text = "Score: " + value.ToString();
-    }
+    //void IncreasePoints(int value)
+    //{
+    //    scoreText.text = "Score: " + value.ToString();
+    //}
 
-    void IncreaseLives(int value)
-    {
-        livesText.text = "Lives: " + value.ToString();
+    //void IncreaseLives(int value)
+    //{
+    //    livesText.text = "Lives: " + value.ToString();
 
-    }
-
-
-
+    //}
 }

@@ -47,6 +47,8 @@ GameObject:
   - component: {fileID: 7372731853103915222}
   - component: {fileID: 8407056617937040281}
   - component: {fileID: 8728346083273731750}
+  - component: {fileID: 766362751980620317}
+  - component: {fileID: 3711502546708935959}
   m_Layer: 0
   m_Name: ScoreTxT
   m_TagString: Untagged
@@ -170,6 +172,49 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &766362751980620317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227159419450796605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773bd78fb41089046aedd8d805e7485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: db2fcbe78d677ae4581b786c817f1e11, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3711502546708935959}
+        m_TargetAssemblyTypeName: UITexts, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3711502546708935959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227159419450796605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca3227b54c3889439db9da4bb75affb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiText: {fileID: 8728346083273731750}
+  _textLabel: 'Score:'
+  _varToShow: {fileID: 11400000, guid: b701cbd16abf7c743b9e2b5e4fbd2a1b, type: 2}
 --- !u!1 &4017948375890053834
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 8728346083273731750}
   livesText: {fileID: 8186516524107886088}
+  slotsValue: 
 --- !u!1 &8879565242303284925
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +442,8 @@ GameObject:
   - component: {fileID: 8110431219968437199}
   - component: {fileID: 7966138448681847476}
   - component: {fileID: 8186516524107886088}
+  - component: {fileID: 8227542885582743010}
+  - component: {fileID: 2186233340890841358}
   m_Layer: 0
   m_Name: LivesTxT
   m_TagString: Untagged
@@ -519,3 +567,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8227542885582743010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879565242303284925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca3227b54c3889439db9da4bb75affb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiText: {fileID: 8186516524107886088}
+  _textLabel: 'Lives:'
+  _varToShow: {fileID: 11400000, guid: ff19585149e3e0d4d964c7b8a29a0106, type: 2}
+--- !u!114 &2186233340890841358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879565242303284925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773bd78fb41089046aedd8d805e7485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 23b6c66376923d94b9872a8041334a5b, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8227542885582743010}
+        m_TargetAssemblyTypeName: UITexts, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

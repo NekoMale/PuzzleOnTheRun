@@ -35,3 +35,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Aggiunto da Daniele Luciani il 2021/04/14
+Logs/AssetImportWorker*
+Logs/shadercompiler-UnityShader*
