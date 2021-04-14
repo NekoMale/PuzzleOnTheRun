@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemValueTxt: {fileID: 4758864069899000970}
   itemImage: {fileID: 7864125408115731538}
+  objContained: {fileID: 8995029367425240028, guid: bc56a6cf58da85047b9b9907c3dc6650, type: 3}
 --- !u!1 &640852282145444709
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,11 +395,11 @@ RectTransform:
   m_Father: {fileID: 607185925846679851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
   m_SizeDelta: {x: 40, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4620413918335959256
 CanvasRenderer:
   m_ObjectHideFlags: 0
