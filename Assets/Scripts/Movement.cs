@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour {
     [Header("Only for debug purpose")]
     [SerializeField] [ReadOnly] bool _isJumping = false;
     [SerializeField] [ReadOnly] bool _isGrounding = true;
+    [SerializeField] [ReadOnly] bool _isStopped = false;
     [SerializeField] [ReadOnly] float _currentMoveSpeed = 0f;
     [SerializeField] [ReadOnly] float _currentJumpForce = 0f;
 
@@ -19,6 +20,7 @@ public class Movement : MonoBehaviour {
     /// Set current move speed to 0 in order to stop it
     /// </summary>
     public void StopMovement() {
+        _isStopped = true;
         _currentMoveSpeed = 0;
     }
 
@@ -26,6 +28,7 @@ public class Movement : MonoBehaviour {
     /// Set current move speed to original move speed in order to start movement again
     /// </summary>
     public void ResumeMovement() {
+        _isStopped = false;
         _currentMoveSpeed = _moveSpeed;
     }
 
@@ -77,6 +80,11 @@ public class Movement : MonoBehaviour {
     {
         _currentJumpForce = _jumpForce;
     }
+
+    public void ResetVelocityY()
+    {
+        _myRigidBody.velocity = new Vector2(_myRigidBody.velocity.x ,0);
+    }
     #endregion
 
     #region Unity Methods
@@ -91,6 +99,11 @@ public class Movement : MonoBehaviour {
     }
 
     private void Update() {
+        if (_isStopped){
+            if (!Input.GetKeyDown(KeyCode.Tab)) { return; }
+            else ResumeMovement(); 
+        }
+
         if (!Input.GetKeyDown(KeyCode.Space)) return;
         if (_isJumping) return;
         if (!_isGrounding) return;
@@ -98,13 +111,13 @@ public class Movement : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if(_isJumping) {
+        _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
+
+        if (_isJumping) {
             _isGrounding = false;
             _isJumping = false;
-            _myRigidBody.AddForce(new Vector2(_currentMoveSpeed, _currentJumpForce), ForceMode2D.Impulse);
-        }
-        else if(_isGrounding) {
-            _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
+            ResetVelocityY(); //Aggiunto altrimenti non funziona il salto fra due piattaforme
+            _myRigidBody.AddForce(new Vector2(0, _currentJumpForce), ForceMode2D.Impulse);
         }
     }
 

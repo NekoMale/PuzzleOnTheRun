@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7302238264283934377}
   - component: {fileID: 7302238264283934379}
   - component: {fileID: 7302238264283934372}
+  - component: {fileID: 236859663959637498}
   - component: {fileID: 7302238264283934376}
   m_Layer: 0
   m_Name: Player
@@ -114,7 +115,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7302238264283934382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -140,7 +141,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7302238264283934382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -159,6 +160,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95115125, y: 0.078868926}
   m_EdgeRadius: 0
+--- !u!70 &236859663959637498
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7302238264283934382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
 --- !u!114 &7302238264283934376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,5 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1affe837f9974e74b92aec9623e5ef06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _horizontalSpeed: 3
+  _moveSpeed: 3.5
   _jumpForce: 5.25
+  _isJumping: 0
+  _isGrounding: 1
+  _currentMoveSpeed: 0
+  _currentJumpForce: 0
