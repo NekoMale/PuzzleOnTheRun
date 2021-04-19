@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'it' Physical Memory: 16227 MB
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'it' Physical Memory: 16305 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,120 +11,682 @@ C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/anton/OneDrive/Documenti/GitHub/PuzzleOnTheRun
+C:/Users/Giovanni/Documents/GitHub/PuzzleOnTheRun
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58825
-Successfully changed project path to: C:/Users/anton/OneDrive/Documenti/GitHub/PuzzleOnTheRun
-C:/Users/anton/OneDrive/Documenti/GitHub/PuzzleOnTheRun
+53508
+Successfully changed project path to: C:/Users/Giovanni/Documents/GitHub/PuzzleOnTheRun
+C:/Users/Giovanni/Documents/GitHub/PuzzleOnTheRun
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/anton/OneDrive/Documenti/GitHub/PuzzleOnTheRun/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Giovanni/Documents/GitHub/PuzzleOnTheRun/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.5148
+    VRAM:     4043 MB
+    Driver:   27.21.14.6589
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002586 seconds.
+Registered in 0.002610 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.536 seconds
+- Completed reload, in  1.037 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001032 seconds.
+Registered in 0.001350 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.485 seconds
+- Completed reload, in  0.864 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1250 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.7 MB.
-System memory in use after: 62.8 MB.
+Unloading 1255 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1697.
-Total: 2.211300 ms (FindLiveObjects: 0.191900 ms CreateObjectMapping: 0.114600 ms MarkObjects: 1.755000 ms  DeleteObjects: 0.147300 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(4c11752522addfb4aa8749672679252d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(4c11752522addfb4aa8749672679252d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1355324578fb12fa0982e6cf6e1c930') in 0.021247 seconds
-  Import took 0.025560 seconds .
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1703.
+Total: 1.627500 ms (FindLiveObjects: 0.154200 ms CreateObjectMapping: 0.052300 ms MarkObjects: 1.357400 ms  DeleteObjects: 0.062700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000708 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaecbe77f802831ef03c4c86483bbc6') in 0.021914 seconds
-  Import took 0.025252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.962327 seconds.
   path: Assets/Prefabs/Trampoline.prefab
   artifactKey: Guid(bc56a6cf58da85047b9b9907c3dc6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Trampoline.prefab using Guid(bc56a6cf58da85047b9b9907c3dc6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7ddf91cb47d8fcffffd2e2525c7d33') in 0.147438 seconds
-  Import took 0.150788 seconds .
+Start importing Assets/Prefabs/Trampoline.prefab using Guid(bc56a6cf58da85047b9b9907c3dc6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9198a4ce1c3877c805af456532ad2410') in 0.106365 seconds
+  Import took 0.108570 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.779394 seconds.
-  path: Assets/Resources/2DAssets
-  artifactKey: Guid(221adf76bd3e94e46a5796017004c1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/2DAssets using Guid(221adf76bd3e94e46a5796017004c1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb9472e2b46697dc1713f255eeb44ce') in 0.015499 seconds
-  Import took 0.018766 seconds .
+  Time since last request: 0.000183 seconds.
+  path: Assets/Prefabs/UI.prefab
+  artifactKey: Guid(6426f2c005af36f4e99a3c08d1184527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI.prefab using Guid(6426f2c005af36f4e99a3c08d1184527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e2c3366a8cd2554b522403c878a4e4') in 0.063187 seconds
+  Import took 0.065312 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.4 MB.
+System memory in use after: 41.5 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1710.
+Total: 2.693200 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.053300 ms MarkObjects: 2.441400 ms  DeleteObjects: 0.013700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.064492 seconds.
-  path: Assets/Resources/2DAssets/Traps
-  artifactKey: Guid(69eb8d948e541bf4fa376514bab29e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/2DAssets/Traps using Guid(69eb8d948e541bf4fa376514bab29e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a60df5c0859d3d54b458e08dd001ab') in 0.016892 seconds
-  Import took 0.020757 seconds .
+  Time since last request: 58.257131 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad9f4728b4e49d192037cb00443fbd0') in 0.014713 seconds
+  Import took 0.017096 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.381535 seconds.
-  path: Assets/Resources/2DAssets/Traps/Trampoline
-  artifactKey: Guid(602316fc18d22f24ebe1c4387d51f7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/2DAssets/Traps/Trampoline using Guid(602316fc18d22f24ebe1c4387d51f7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b8933d105f7941b0933296bef9ee00') in 0.005005 seconds
-  Import took 0.008660 seconds .
+  Time since last request: 14.373253 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fc232e61c3d808b86e7596e434ab06') in 0.010354 seconds
+  Import took 0.012454 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.769486 seconds.
-  path: Assets/Resources/2DAssets/Traps/Trampoline/Mod
-  artifactKey: Guid(63876416223052b4f9c62f332604c3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/2DAssets/Traps/Trampoline/Mod using Guid(63876416223052b4f9c62f332604c3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e627f3a54a2966bd3dcd7ae535763387') in 0.016375 seconds
-  Import took 0.019442 seconds .
+  Time since last request: 11.422976 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8f27f2e4c5c311966b7f56e1c9c7f5') in 0.011824 seconds
+  Import took 0.014303 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 12.268959 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b4f0fc89880d98838edc17b8d06fe9') in 0.010661 seconds
+  Import took 0.012789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.025883 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3776cd0bec3093f508cce018b4ee6b72') in 0.015254 seconds
+  Import took 0.019209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.870067 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705515dad38df56160fdb1ef9d10763a') in 0.013108 seconds
+  Import took 0.015764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.983962 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bab4a8f20bdabeab895a6ab0810a12') in 0.016771 seconds
+  Import took 0.020210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.997844 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1e40ddd5acae37545a40d7f884a6a7') in 0.011773 seconds
+  Import took 0.015405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.248041 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738309424135b8a5e4e2032f9e8eb143') in 0.014875 seconds
+  Import took 0.018137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.429243 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a606f7d38d4613b5bff207487f675893') in 0.013783 seconds
+  Import took 0.015953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.408520 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabf085188f8142e6ec680c493845921') in 0.012100 seconds
+  Import took 0.014544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.029647 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a3eec04e76b7fb1ff8cb1e5b350819') in 0.012487 seconds
+  Import took 0.015100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.654125 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed8cffdfb7a4a6306ca1fb2a695f27a') in 0.013336 seconds
+  Import took 0.015554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.842512 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1ee07f0094ebb1ad176c88b7570b84') in 0.007045 seconds
+  Import took 0.009392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002652 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1ee07f0094ebb1ad176c88b7570b84') in 0.005179 seconds
+  Import took 0.007403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.593284 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6aab899c193d1c875d6e10ec6e20246') in 0.014240 seconds
+  Import took 0.016738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.105110 seconds.
+  path: Assets/Prefabs/Traps/HorizonthalSaw.prefab
+  artifactKey: Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/HorizonthalSaw.prefab using Guid(afda7a9f91d923f48b453c44da99ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10287888212265c98f83d64860fb196f') in 0.025296 seconds
+  Import took 0.029001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.183955 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057201cb6aee321f880dc8539df50b91') in 0.010696 seconds
+  Import took 0.012750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.685196 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae03a693ae7be365dd60b90a102dd90') in 0.010258 seconds
+  Import took 0.012339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.119381 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0d222dc7fe415682bef9fc32509657') in 0.009954 seconds
+  Import took 0.012304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.960233 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71209cd0f7c045eb1a1eb7bd8bececae') in 0.045799 seconds
+  Import took 0.050023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.612449 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b915376ec4cd227dd3a934b0287d0fff') in 0.011286 seconds
+  Import took 0.013404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.820990 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0329cb987bd9bf7a96cb77922e5e7e2f') in 0.011238 seconds
+  Import took 0.013834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.808495 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94058871dc413af4188011b1d696b709') in 0.010688 seconds
+  Import took 0.013059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.846793 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9c637f08980f365fa94876f96e45ee') in 0.014775 seconds
+  Import took 0.018162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.215288 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102b708eee74403235c87dc117b39476') in 0.014410 seconds
+  Import took 0.016876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.032989 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e65c19e20a0c2089b1e8987a680e1a') in 0.013855 seconds
+  Import took 0.017646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.006712 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9f87c1f48c21b770098743bc5d1fb0') in 0.011725 seconds
+  Import took 0.014179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.608354 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207d2f5f2b1f49b04cc07ea777c47d46') in 0.019575 seconds
+  Import took 0.023835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.799218 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55ebaaebe3c56ad9f76acc9a27f1f68') in 0.009687 seconds
+  Import took 0.012025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.708405 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4254dbada01a0bd046d37c7a394a3050') in 0.011671 seconds
+  Import took 0.013939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.212103 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2201f9d34d8220a7eaddf4f92c9569e') in 0.011383 seconds
+  Import took 0.013627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.836765 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161fa41806a90e5ced0a55aca390668a') in 0.011140 seconds
+  Import took 0.013949 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.8 MB.
+System memory in use after: 64.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1713.
+Total: 1.416500 ms (FindLiveObjects: 0.125600 ms CreateObjectMapping: 0.036900 ms MarkObjects: 1.239800 ms  DeleteObjects: 0.013600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.734909 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7db8fb32606067296f7ba8ec0bdb9bd') in 0.047071 seconds
+  Import took 0.049212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.837248 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d13c509ab915a6317554e6e51326ec') in 0.010184 seconds
+  Import took 0.013071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.444210 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5203a25f0a53f16cddddf43394b2b4b') in 0.012148 seconds
+  Import took 0.014313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.261648 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e244c53e7024ad5def6fd6d8991e920d') in 0.009106 seconds
+  Import took 0.011218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.022846 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd673f2cdcf639e135707bbfaeb870306') in 0.008780 seconds
+  Import took 0.010884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.831573 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2ac3278d75d605d09d10a868209df1') in 0.010774 seconds
+  Import took 0.013458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.653519 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c28bf43e2cd9106ddc409278191e7d') in 0.010380 seconds
+  Import took 0.012661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.812912 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2592ba2666ee969e7c249969a6cfd0df') in 0.009177 seconds
+  Import took 0.011398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.423189 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e35db313f4ef2636a2ccd18fd683f4') in 0.013070 seconds
+  Import took 0.015417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.229489 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7bc283c6497e812b40dfe8b1d5c5a80') in 0.010167 seconds
+  Import took 0.012418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.009743 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a5957052ee350b78b58e397a493a5c') in 0.011343 seconds
+  Import took 0.015095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.998599 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b09c6de4d6191387f507cdbeb4a6e5') in 0.009682 seconds
+  Import took 0.011919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.822178 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51484f4338d5246661a91fe4c9decf6') in 0.014575 seconds
+  Import took 0.018328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.191527 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8cc37d4962fdb498a32d85071e4f3e') in 0.013565 seconds
+  Import took 0.016244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.832983 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022ee63d813121a4081e2353e21622f2') in 0.011001 seconds
+  Import took 0.013012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.222680 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6dfd88d3b046994cafe6f30d881914b') in 0.010618 seconds
+  Import took 0.012924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.824397 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79d2943c56b79c70c20b1fca6007d97') in 0.010941 seconds
+  Import took 0.013199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.901156 seconds.
+  path: Assets/Prefabs/Traps/SpikeBall.prefab
+  artifactKey: Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/SpikeBall.prefab using Guid(c37f9cfa829a1f44eac7e63d4278aed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a53b1c48e19e5c463bbd596743de81') in 0.012380 seconds
+  Import took 0.014713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.318269 seconds.
+  path: Assets/Prefabs/Traps/Spikes.prefab
+  artifactKey: Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Spikes.prefab using Guid(4b5395c7e9aeed3419e3565ae0d6de03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df913410018df4fb02a2e9ee2329ff4f') in 0.009653 seconds
+  Import took 0.012244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.699332 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2003a5201563e0bca4ddaa118735cb64') in 0.023999 seconds
+  Import took 0.026309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.491063 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325bb19a1f58c68c21d1c562a56beab5') in 0.014000 seconds
+  Import took 0.018201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.068257 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f377e2616300ac1cdd03e24171b1a17') in 0.015471 seconds
+  Import took 0.018824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.255683 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ee2145fed4de98b8db8bb7880ea9fa') in 0.015545 seconds
+  Import took 0.017899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.610936 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a4002de6bacce3214504400c7551c6') in 0.018397 seconds
+  Import took 0.022160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.786312 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7add43746abbce3eec6c1496a8660e7c') in 0.012474 seconds
+  Import took 0.015280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.008391 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2653f3320b4430e83907b48edc6c7cff') in 0.012777 seconds
+  Import took 0.015756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.002983 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55af6b8a12647ea4f6f4d6d8815333b4') in 0.010999 seconds
+  Import took 0.013347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.643445 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58929d1ceecd5959ac1e15bcc2e887b1') in 0.016074 seconds
+  Import took 0.019598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.821432 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6275657f19e97b7abe549a59d29b06') in 0.014830 seconds
+  Import took 0.017805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.820563 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f11e4e1b1bdf0187fbd714a6bb7f6c') in 0.011346 seconds
+  Import took 0.013805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.645680 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc0e70fb1891a36535a0f0d4bca1c25') in 0.018010 seconds
+  Import took 0.022484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.353632 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25674d807f7cf4cc340f0ec4b0fdd82f') in 0.012276 seconds
+  Import took 0.014872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.398581 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b7c27ecc5d97318816620dfa2e0613') in 0.012219 seconds
+  Import took 0.015228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.381097 seconds.
+  path: Assets/Prefabs/Traps/Vertical Saw.prefab
+  artifactKey: Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/Vertical Saw.prefab using Guid(d91b422a2b84ef84a96efc88a273023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dd6312f0249bb5d5c3dc9e32bdd2ae') in 0.013810 seconds
+  Import took 0.016330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.756895 seconds.
+  path: Assets/Scripts/TrampolineBeh.cs
+  artifactKey: Guid(c6de38b5ce7cacb4bb6c01bcf6ab0659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TrampolineBeh.cs using Guid(c6de38b5ce7cacb4bb6c01bcf6ab0659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f6260184d47fdf6736da5bbfefbdc0') in 0.040496 seconds
+  Import took 0.042599 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000867 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.944 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.9 MB.
+System memory in use after: 65.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1717.
+Total: 1.840000 ms (FindLiveObjects: 0.187800 ms CreateObjectMapping: 0.050000 ms MarkObjects: 1.585500 ms  DeleteObjects: 0.015700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
