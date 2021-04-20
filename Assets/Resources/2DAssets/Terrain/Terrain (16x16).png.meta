@@ -440,6 +440,9 @@ TextureImporter:
   - first:
       213: -5145103406855989666
     second: Box
+  - first:
+      213: -9166483627622830739
+    second: terrrenofilled
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -481,7 +484,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -3585,7 +3588,7 @@ TextureImporter:
         width: 48
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3606,7 +3609,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3614,6 +3617,27 @@ TextureImporter:
       bones: []
       spriteID: e5652bd16bbe898b0800000000000000
       internalID: -5145103406855989666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrrenofilled
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 128
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 17, y: 16, z: 16, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d6b10f4bb1ac080800000000000000
+      internalID: -9166483627622830739
       vertices: []
       indices: 
       edges: []

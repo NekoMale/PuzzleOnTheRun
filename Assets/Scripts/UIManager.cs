@@ -7,16 +7,20 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
 
-    Slot[] slots;
+    public Slot[] slots;
     int lastSelectedSlot = -1;
     //[Header("SCORE & LIVES")]
     //[SerializeField] TextMeshProUGUI scoreText;
     //[SerializeField] TextMeshProUGUI livesText;
-    [SerializeField] List<int> slotsValue;
+    List<int> slotsValue = new List<int>() ;
     // Start is called before the first frame update
     void Start()
     {
         slots = GetComponentsInChildren<Slot>();
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slotsValue.Add(slots[i].ItemValue);
+        }
         RestartUI();
     }
 
