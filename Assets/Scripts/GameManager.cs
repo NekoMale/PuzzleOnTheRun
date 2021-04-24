@@ -28,10 +28,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite defaultCursor;
     [SerializeField] GameObject ps;
     [SerializeField] GameObject test;
-
-
-
-
+    [SerializeField] Camera mainCamera;
 
     Dictionary<KeyCode, int> slotsKeyValue = new Dictionary<KeyCode, int>();
     KeyCode key;
@@ -85,12 +82,13 @@ public class GameManager : MonoBehaviour
     {
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
-        GameObject go =Instantiate(obj);
+        GameObject go = Instantiate(obj);
         go.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
     }
 
     void Update()
     {
+
         foreach (KeyCode keyPressed in slotsKeyValue.Keys)
         {
             if (Input.GetKeyDown(keyPressed))
@@ -100,20 +98,18 @@ public class GameManager : MonoBehaviour
             }
         }
 
+
         if (Input.GetMouseButtonDown(0))
         {
+            if (key == slotsKeys[slotsKeys.Count - 1] && !SearchAndReplaceTrap()) return;
             //If object to spawn is available
             if (OnPlacementEvent.Invoke(slotsKeyValue[key]))
             {
-
-
-
                 InstantiateObj(ps);
                 //SPAWNA OGGETTO
                 GameObject spawn = OnSpawningEvent.Invoke(slotsKeyValue[key]);
+                Debug.Log(spawn);
                 InstantiateObj(spawn);
-
-
             }
             else
             {
@@ -121,5 +117,27 @@ public class GameManager : MonoBehaviour
                 Cursor.SetCursor(/*defaultCursor.texture*/null, Vector2.zero, CursorMode.ForceSoftware);
             }
         }
+    }
+
+    private bool SearchAndReplaceTrap()
+    {
+        RaycastHit2D rayHit2d = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if (!rayHit2d.collider.gameObject.CompareTag("Traps") || !UIManager.UiMgrInstance.CheckAviability(slotsKeyValue[key])) return false;
+
+        GameObject obj = rayHit2d.collider.gameObject;
+        if (obj.transform.parent == null)
+        {
+            DestroyImmediate(obj);
+        }
+        else
+        {
+            Transform parent = obj.transform.parent;
+            for (int i = 0; i < parent.childCount; i++)
+            {
+                DestroyImmediate(parent.GetChild(i).gameObject);
+            }
+            DestroyImmediate(parent.gameObject);
+        }
+        return true;
     }
 }

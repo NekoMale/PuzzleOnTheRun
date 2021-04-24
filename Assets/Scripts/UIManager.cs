@@ -6,16 +6,18 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-
+    public static UIManager UiMgrInstance;
     public Slot[] slots;
     int lastSelectedSlot = -1;
     //[Header("SCORE & LIVES")]
     //[SerializeField] TextMeshProUGUI scoreText;
     //[SerializeField] TextMeshProUGUI livesText;
-    List<int> slotsValue = new List<int>() ;
+    List<int> slotsValue = new List<int>();
+
     // Start is called before the first frame update
     void Start()
     {
+        UiMgrInstance = this;
         slots = GetComponentsInChildren<Slot>();
         for (int i = 0; i < slots.Length; i++)
         {
@@ -83,6 +85,11 @@ public class UIManager : MonoBehaviour
     {
         if (index < slots.Length)
             slots[index].OnDeselection();
+    }
+
+    public bool CheckAviability(int slotIndex)
+    {
+        return slots[slotIndex].CheckAvailability();
     }
 
     //void IncreasePoints(int value)
