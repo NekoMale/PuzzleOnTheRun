@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 8995029367425240031}
   TriggerName: JumpTrigger
+<<<<<<< Updated upstream
   JumpModifier: 2.5
   _movementModifier: 2
 --- !u!50 &-4784126253246229498
@@ -168,3 +169,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+=======
+  JumpModifier: 2
+>>>>>>> Stashed changes

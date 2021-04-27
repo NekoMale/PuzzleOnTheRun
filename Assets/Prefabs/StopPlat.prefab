@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb0d0efbd1ee0e4b9ebd5e839cecbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   RestartKey: 9
 --- !u!50 &902053232556561981
 Rigidbody2D:
@@ -244,3 +245,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2900350240586863145, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
   m_PrefabInstance: {fileID: 6465529645898660492}
   m_PrefabAsset: {fileID: 0}
+=======
+  RestartKey: 32
+>>>>>>> Stashed changes
