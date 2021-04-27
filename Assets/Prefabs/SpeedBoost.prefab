@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa97d0bdcb11b54787f28a6c2fdbe4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalTime: 2
+  TotalTime: 1.4
   Boost: 2
 --- !u!1001 &573468310650645492
 PrefabInstance:
