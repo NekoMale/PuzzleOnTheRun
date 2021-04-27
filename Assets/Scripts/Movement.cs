@@ -110,6 +110,7 @@ public class Movement : MonoBehaviour {
         if (_isStopped) return;
 
         if (!_isJumping) {
+            Debug.Log(_myRigidBody.velocity);
             _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
         }
 
