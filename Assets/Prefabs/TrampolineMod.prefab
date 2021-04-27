@@ -172,12 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 8995029367425240031}
   TriggerName: JumpTrigger
-<<<<<<< Updated upstream
-  JumpModifier: 2
-  _movementModifier: 2
-=======
   JumpModifier: 3
->>>>>>> Stashed changes
+  _movementModifier: 2
 --- !u!50 &4810348982234582429
 Rigidbody2D:
   serializedVersion: 4
