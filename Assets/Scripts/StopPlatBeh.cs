@@ -5,34 +5,35 @@ using UnityEngine;
 public class StopPlatBeh : MonoBehaviour
 {
     [SerializeField] KeyCode RestartKey;
-    private Movement moveSys;
     private bool performUpdate = false;
-    private bool restartNeeded = false;
 
-    private void Update()
-    {
-        if (!performUpdate) return;
-        if (Input.GetKeyDown(RestartKey)) { restartNeeded = true; performUpdate = false; }
+    private Movement playerMov = null;
+    private Rigidbody2D rb;
 
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        collision.gameObject.GetComponent<Movement>().StopMovement();
+    private void Update() {
+        if (Input.GetKeyDown(RestartKey) && playerMov != null) {
+            playerMov.ResumeMovement();
+            playerMov = null;
+        }
     }
-    /* private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.transform.position.y <= this.transform.position.y) { Debug.Log("mammeta"); return; }
-        if (moveSys == null)
-            moveSys = collision.gameObject.GetComponent<Movement>();
-        
-        moveSys.StopMovement();
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Ground")) {
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+        else if(collision.gameObject.CompareTag("Player")) {
+            playerMov = collision.gameObject.GetComponent<Movement>();
+            playerMov.Stop();
+        }
     }
-   
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (performUpdate) return;
-        else performUpdate = true;
-        if (restartNeeded) { moveSys.ResumeMovement(); restartNeeded = false;  performUpdate = false; }
-     }
-    */
+
+    private void OnCollisionExit2D(Collision2D collision) {
+        if (!collision.gameObject.CompareTag("Player")) return;
+        if (playerMov == null) return;
+        playerMov.ResumeMovement();
+        playerMov = null;
+    }
 }

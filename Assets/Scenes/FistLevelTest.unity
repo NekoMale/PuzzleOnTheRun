@@ -387,6 +387,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsKeys: 7100000077000000650000007200000074000000
+  _forbiddenLayers:
+    serializedVersion: 2
+    m_Bits: 18688
+  _minDistanceFromLayers: 0.25
   defaultCursor: {fileID: 21300000, guid: 0c13150e7da2b054a8ba8f2b5b336ef2, type: 3}
   ps: {fileID: 5215666097109491142, guid: b0e5b3c5884d79d4f91f4cf33e9f8335, type: 3}
   test: {fileID: 0}
@@ -473,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6322917929293699031, guid: c37f9cfa829a1f44eac7e63d4278aed1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6322917929978026010, guid: c37f9cfa829a1f44eac7e63d4278aed1, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -520,6 +528,10 @@ PrefabInstance:
     - target: {fileID: 6322917929978026086, guid: c37f9cfa829a1f44eac7e63d4278aed1, type: 3}
       propertyPath: m_Name
       value: SpikeBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322917929978026086, guid: c37f9cfa829a1f44eac7e63d4278aed1, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6322917929978026086, guid: c37f9cfa829a1f44eac7e63d4278aed1, type: 3}
       propertyPath: m_IsActive
@@ -860,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2237205688585584835, guid: 772a75c0524086f49a310f4e9a5760a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.92
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 2237205688585584835, guid: 772a75c0524086f49a310f4e9a5760a9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1041,9 +1053,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6166188494328956920, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166188494765357357, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166188496298958561, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
       propertyPath: m_Name
       value: HorizonthalSaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
       propertyPath: m_IsActive
@@ -1167,9 +1195,9 @@ GameObject:
   - component: {fileID: 1208867001}
   - component: {fileID: 1208867000}
   - component: {fileID: 1208866999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor!
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1337,9 +1365,9 @@ GameObject:
   - component: {fileID: 1310017460}
   - component: {fileID: 1310017459}
   - component: {fileID: 1310017458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor! (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,7 +1561,7 @@ PrefabInstance:
     - target: {fileID: 5505739619015044815, guid: ca4f804671fd36f49ab28cfb2da3e579, type: 3}
       propertyPath: objContained
       value: 
-      objectReference: {fileID: 8995029367425240028, guid: 3bb86e035fb83cd4799c2ec2a900f8bb, type: 3}
+      objectReference: {fileID: 8995029367425240028, guid: 4dcd1ff332aba1c41afa9272d14aa3c6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4f804671fd36f49ab28cfb2da3e579, type: 3}
 --- !u!1001 &1444136507
@@ -1653,12 +1681,28 @@ PrefabInstance:
       value: Vertical Saw
       objectReference: {fileID: 0}
     - target: {fileID: 6524756255853263342, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6524756255853263342, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206328526445122785, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9206328527969301292, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206328527969301293, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206328528539569656, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9206328528539569659, guid: d91b422a2b84ef84a96efc88a273023f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1673,9 +1717,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6166188494328956920, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166188494765357357, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166188496298958561, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
       propertyPath: m_Name
       value: HorizonthalSaw (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7758965916403322448, guid: afda7a9f91d923f48b453c44da99ccac, type: 3}
       propertyPath: m_IsActive
@@ -2061,9 +2121,9 @@ GameObject:
   - component: {fileID: 2027762068}
   - component: {fileID: 2027762067}
   - component: {fileID: 2027762066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor! (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

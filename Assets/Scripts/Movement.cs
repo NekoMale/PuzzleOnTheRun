@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
 
     [Header("Only for debug purpose")]
     [SerializeField] [ReadOnly] bool _isJumping = false;
-    [SerializeField] [ReadOnly] bool _isGrounding = true;
+    [SerializeField] [ReadOnly] bool _jump = false;
     [SerializeField] [ReadOnly] bool _isStopped = false;
     [SerializeField] [ReadOnly] float _currentMoveSpeed = 0f;
     [SerializeField] [ReadOnly] float _currentJumpForce = 0f;
@@ -19,9 +19,10 @@ public class Movement : MonoBehaviour {
     /// <summary>
     /// Set current move speed to 0 in order to stop it
     /// </summary>
-    public void StopMovement() {
+    public void Stop() {
         _isStopped = true;
-        _currentMoveSpeed = 0;
+        _isJumping = false;
+        _myRigidBody.velocity = Vector2.zero;
     }
 
     /// <summary>
@@ -29,7 +30,6 @@ public class Movement : MonoBehaviour {
     /// </summary>
     public void ResumeMovement() {
         _isStopped = false;
-        _currentMoveSpeed = _moveSpeed;
     }
 
     /// <summary>
@@ -39,6 +39,7 @@ public class Movement : MonoBehaviour {
     /// <param name="multiplier">Value that multiply _currentMoveSpeed</param>
     public void MultiplyMoveSpeed(float multiplier) {
         _currentMoveSpeed *= multiplier;
+        _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
     }
 
     /// <summary>
@@ -48,6 +49,11 @@ public class Movement : MonoBehaviour {
     /// <param name="amount">Value that change _currentMoveSpeed</param>
     public void ChangeMoveSpeed(float amount) {
         _currentMoveSpeed += amount;
+        _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
+    }
+
+    public void ResetMovement() {
+        _currentMoveSpeed = _moveSpeed;
     }
     #endregion
 
@@ -65,7 +71,7 @@ public class Movement : MonoBehaviour {
     /// Increase current jump force to this value.
     /// If you need to subtract jump force you can pass (- amount)
     /// </summary>
-    /// <param name="amount">Value that change _currentJumpForce</param>
+    /// <param name="amount">Value that change _currentJumpForce</param>    
     public void ChangeJumpForce(float amount) {
         _currentJumpForce += amount;
     }
@@ -74,16 +80,11 @@ public class Movement : MonoBehaviour {
     /// Order to movement to jump
     /// </summary>
     public void Jump() {
-        _isJumping = true;
-    }
-    public void ResetJump()
-    {
-        _currentJumpForce = _jumpForce;
+        _jump = true;
     }
 
-    public void ResetVelocityY()
-    {
-        _myRigidBody.velocity = new Vector2(_myRigidBody.velocity.x ,0);
+    public void ResetJump() {
+        _currentJumpForce = _jumpForce;
     }
     #endregion
 
@@ -93,37 +94,36 @@ public class Movement : MonoBehaviour {
     }
 
     private void Start() {
-        _isGrounding = true;
         _currentMoveSpeed = _moveSpeed;
         _currentJumpForce = _jumpForce;
     }
 
     private void Update() {
-        if (_isStopped){
-            if (!Input.GetKeyDown(KeyCode.Tab)) { return; }
-            else ResumeMovement(); 
-        }
+        if (_isStopped) return;
 
         if (!Input.GetKeyDown(KeyCode.Space)) return;
         if (_isJumping) return;
-        if (!_isGrounding) return;
         Jump();
     }
 
     private void FixedUpdate() {
-        _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
+        if (_isStopped) return;
 
-        if (_isJumping) {
-            _isGrounding = false;
-            _isJumping = false;
-            ResetVelocityY(); //Aggiunto altrimenti non funziona il salto fra due piattaforme
+        if (!_isJumping) {
+            _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
+        }
+
+        if (_jump) {
+            _isJumping = true;
+            _jump = false;
+            _myRigidBody.velocity = new Vector2(_currentMoveSpeed, 0);
+            //ResetMovement(); //Aggiunto altrimenti non funziona il salto fra due piattaforme
             _myRigidBody.AddForce(new Vector2(0, _currentJumpForce), ForceMode2D.Impulse);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        _isGrounding = true;
-        ResetJump();
+        _isJumping = false;
     }
     #endregion
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6322917929293699029}
   - component: {fileID: 6322917929293699019}
   - component: {fileID: 6322917929293699016}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SpikeHead
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 6322917929978026010}
   - component: {fileID: 6322917929978026085}
   - component: {fileID: 6322917929978026084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SpikeBall
   m_TagString: Traps
   m_Icon: {fileID: 0}

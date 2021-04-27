@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5969537299623875008}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vertical Saw
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 9206328526445122799}
   - component: {fileID: 9206328526445122796}
   - component: {fileID: 9206328526445122784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Saw
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9206328527969301292}
   - component: {fileID: 9206328527969301295}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Down_SawLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9206328528539569659}
   - component: {fileID: 9206328528539569658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Up_SawLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

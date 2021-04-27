@@ -7,18 +7,30 @@ public class TrampolineBeh : MonoBehaviour
     [SerializeField] Animator Anim;
     [SerializeField] string TriggerName;
     [SerializeField] float JumpModifier;
+    [SerializeField] float _movementModifier;
+    Rigidbody2D rb;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Anim.SetTrigger(TriggerName);
-        Movement mov = collision.gameObject.GetComponent<Movement>();
-        mov.ChangeJumpForce(JumpModifier);
-        mov.Jump();
+    private void Start() {
+        rb = transform.GetComponent<Rigidbody2D>();
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Ground")) {
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+        else if (collision.gameObject.CompareTag("Player")) {
+            Anim.SetTrigger(TriggerName);
+            Movement mov = collision.gameObject.GetComponent<Movement>();
+            mov.ChangeJumpForce(JumpModifier);
+            mov.ChangeMoveSpeed(_movementModifier);
+            mov.Jump();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision) {
+        if (!collision.gameObject.CompareTag("Player")) return;
         Anim.ResetTrigger(TriggerName);
         collision.gameObject.GetComponent<Movement>().ResetJump();
+        collision.gameObject.GetComponent<Movement>().ResetMovement();
     }
 }

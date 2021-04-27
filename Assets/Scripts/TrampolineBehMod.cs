@@ -7,6 +7,7 @@ public class TrampolineBehMod : MonoBehaviour
     [SerializeField] Animator Anim;
     [SerializeField] string TriggerName;
     [SerializeField] float JumpModifier;
+    [SerializeField] float _movementModifier;
     Rigidbody2D rb;
     private void Start()
     {
@@ -17,6 +18,7 @@ public class TrampolineBehMod : MonoBehaviour
         Anim.SetTrigger(TriggerName);
         Movement mov = collision.gameObject.GetComponent<Movement>();
         mov.ChangeJumpForce(JumpModifier);
+        mov.ChangeMoveSpeed(_movementModifier);
         mov.Jump();
     }
     private void OnCollisionEnter2D(Collision2D collision)

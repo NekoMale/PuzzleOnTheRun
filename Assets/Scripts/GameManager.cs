@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour
     [Header("INPUT")]
     [SerializeField] List<KeyCode> slotsKeys;
 
+    [Header("PLACEMENT")]
+    [SerializeField] LayerMask _forbiddenLayers;
+    [SerializeField] float _minDistanceFromLayers = 0.25f;
+
     [Header("GUI")]
     [SerializeField] Sprite defaultCursor;
     [SerializeField] GameObject ps;
@@ -102,6 +106,9 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (key == slotsKeys[slotsKeys.Count - 1] && !SearchAndReplaceTrap()) return;
+            
+            RaycastHit2D hit = Physics2D.CircleCast(Camera.main.ScreenToWorldPoint(Input.mousePosition), _minDistanceFromLayers, Vector2.zero, 1f, _forbiddenLayers);
+            if (hit.collider != null) return;
             //If object to spawn is available
             if (OnPlacementEvent.Invoke(slotsKeyValue[key]))
             {

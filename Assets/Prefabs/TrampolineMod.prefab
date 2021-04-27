@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8995029367425240031}
   - component: {fileID: 103486386568760114}
   - component: {fileID: 4810348982234582429}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: TrampolineMod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,6 +173,7 @@ MonoBehaviour:
   Anim: {fileID: 8995029367425240031}
   TriggerName: JumpTrigger
   JumpModifier: 2
+  _movementModifier: 2
 --- !u!50 &4810348982234582429
 Rigidbody2D:
   serializedVersion: 4

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6166188494328956923}
   - component: {fileID: 6166188494328956922}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sx_SawLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6166188494765357356}
   - component: {fileID: 6166188494765357359}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dx_SawLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 6166188496298958575}
   - component: {fileID: 6166188496298958572}
   - component: {fileID: 6166188496298958560}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Saw
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7758965916403322449}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HorizonthalSaw
   m_TagString: Traps
   m_Icon: {fileID: 0}

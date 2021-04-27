@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9130600769061943808}
   - component: {fileID: 614288595375822172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SawChain
   m_TagString: Traps
   m_Icon: {fileID: 0}
