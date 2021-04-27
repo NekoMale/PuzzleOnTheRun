@@ -10,8 +10,9 @@ public class Slot : MonoBehaviour
     public TextMeshProUGUI itemValueTxt;
     [SerializeField] Image itemImage;
     public GameObject objContained;
-
-    int _itemValue = 3;
+    [SerializeField] int _startingItemAmount = 3;
+    [Tooltip("Edit this at runtime only for debug purpose. This is equal to Starting Item Amount on start game")]
+    [SerializeField] int _currentItemAmount;
     bool selected = false;
 
 
@@ -20,19 +21,19 @@ public class Slot : MonoBehaviour
 
         get
         {
-            return _itemValue;
+            return _currentItemAmount;
         }
         set
         {
-            _itemValue = value;
-            itemValueTxt.text = _itemValue.ToString();
-
+            _currentItemAmount = value;
+            itemValueTxt.text = _currentItemAmount.ToString();
         }
     }
 
     void Awake()
     {
-        itemValueTxt.text = _itemValue.ToString();
+        _currentItemAmount = _startingItemAmount;
+        itemValueTxt.text = _currentItemAmount.ToString();
     }
 
 
