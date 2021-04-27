@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalTime: 1.4
   Boost: 2
+  _yPosition: {fileID: 3437727895875779037}
 --- !u!1001 &573468310650645492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180,11 +181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900350240586863145, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: 2900350240586863145, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.115
       objectReference: {fileID: 0}
     - target: {fileID: 2900350240586863145, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -218,25 +219,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5035623531633110024, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7036918
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035623531633110024, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.1199573
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035623531633110024, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.013507694
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035623531633110024, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.07250054
-      objectReference: {fileID: 0}
     - target: {fileID: 7222919756728929426, guid: e9659b0819012ee409265d35f61a22f9, type: 3}
       propertyPath: m_Name
-      value: PlayerKiller
+      value: YPos
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9659b0819012ee409265d35f61a22f9, type: 3}

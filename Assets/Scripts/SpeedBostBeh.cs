@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpeedBostBeh : MonoBehaviour {
     [SerializeField] float TotalTime = 2f;
     [SerializeField] float Boost;
+    [SerializeField] Transform _yPosition;
     private Movement playerMov;
     private Rigidbody2D rb;
 
@@ -30,6 +31,7 @@ public class SpeedBostBeh : MonoBehaviour {
         }
         else if (collision.gameObject.CompareTag("Player")) {
             playerMov = collision.gameObject.GetComponent<Movement>();
+            playerMov.transform.position = new Vector3(playerMov.transform.position.x + 0.1f, _yPosition.position.y);
             playerMov.MultiplyMoveSpeed(Boost);
         }
     }

@@ -115,7 +115,6 @@ public class GameManager : MonoBehaviour
                 InstantiateObj(ps);
                 //SPAWNA OGGETTO
                 GameObject spawn = OnSpawningEvent.Invoke(slotsKeyValue[key]);
-                Debug.Log(spawn);
                 InstantiateObj(spawn);
             }
             else

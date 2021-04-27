@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour {
     [SerializeField] float _moveSpeed = 3.5f;
@@ -110,21 +111,25 @@ public class Movement : MonoBehaviour {
         if (_isStopped) return;
 
         if (!_isJumping) {
-            Debug.Log(_myRigidBody.velocity);
             _myRigidBody.velocity = new Vector2(_currentMoveSpeed, _myRigidBody.velocity.y);
         }
 
         if (_jump) {
             _isJumping = true;
             _jump = false;
-            _myRigidBody.velocity = new Vector2(_currentMoveSpeed, 0);
+            _myRigidBody.velocity = new Vector2(0, 0);
             //ResetMovement(); //Aggiunto altrimenti non funziona il salto fra due piattaforme
-            _myRigidBody.AddForce(new Vector2(0, _currentJumpForce), ForceMode2D.Impulse);
+            _myRigidBody.AddForce(new Vector2(_currentMoveSpeed, _currentJumpForce), ForceMode2D.Impulse);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         _isJumping = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider) {
+        if (!collider.gameObject.CompareTag("Ground")) return;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     #endregion
 }

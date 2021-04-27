@@ -5,6 +5,7 @@ using UnityEngine;
 public class StopPlatBeh : MonoBehaviour
 {
     [SerializeField] KeyCode RestartKey;
+    [SerializeField] Transform _yPosition;
     private bool performUpdate = false;
 
     private Movement playerMov = null;
@@ -26,6 +27,7 @@ public class StopPlatBeh : MonoBehaviour
         }
         else if(collision.gameObject.CompareTag("Player")) {
             playerMov = collision.gameObject.GetComponent<Movement>();
+            playerMov.transform.position = new Vector3(playerMov.transform.position.x + 0.1f, _yPosition.position.y);
             playerMov.Stop();
         }
     }
