@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7302238264283934383}
   - component: {fileID: 7302238264283934378}
   - component: {fileID: 7302238264283934377}
-  - component: {fileID: 236859663959637498}
   - component: {fileID: 7302238264283934376}
   - component: {fileID: 4723416318318860180}
   m_Layer: 0
@@ -107,22 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &236859663959637498
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7302238264283934382}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10007095}
-  m_Size: {x: 0.66339874, y: 0.7998581}
-  m_Direction: 0
 --- !u!114 &7302238264283934376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +122,6 @@ MonoBehaviour:
   _jumpForce: 5.25
   _isJumping: 0
   _jump: 0
-  _isGrounding: 1
   _isStopped: 0
   _currentMoveSpeed: 0
   _currentJumpForce: 0
@@ -169,41 +151,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.54037833, y: 0.7479495}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
-=======
---- !u!70 &236859663959637498
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7302238264283934382}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
---- !u!114 &7302238264283934376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7302238264283934382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1affe837f9974e74b92aec9623e5ef06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 3.45
-  _jumpForce: 4.6
-  _isJumping: 0
-  _isGrounding: 1
-  _isStopped: 0
-  _currentMoveSpeed: 0
-  _currentJumpForce: 0
->>>>>>> Stashed changes
